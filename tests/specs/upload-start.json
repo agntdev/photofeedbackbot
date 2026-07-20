@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Отправить фото",
+    "steps": [
+      {
+        "expect": [
+          {
+            "method": "sendMessage",
+            "payload": {
+              "text": "Запускает процесс загрузки и анализа фото"
+            }
+          }
+        ],
+        "send": {
+          "callback": "upload:start"
+        }
+      }
+    ]
+  }
+]
